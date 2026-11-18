@@ -1,6 +1,6 @@
 # ADR-0001: 백엔드 학습 기술 스택 선정
 
-- 상태: Accepted (학습 계획 기준, 구현 시 버전 재검증)
+- 상태: Amended by [ADR-0002](0002-build-system.md) for build tools; 나머지 항목 유지
 - 작성일: 2026-11-19
 
 ## 의사결정 기준
@@ -15,7 +15,7 @@
 |---|---|---|---|
 | 언어 | Java 21 | JVM, 메모리 모델, 동시성, 현재 실무 연결 | Go/Kotlin은 후속 비교 |
 | 웹 | Spring Boot (호환 버전 고정) | Servlet, DI, 트랜잭션, 보안 생태계 | Quarkus/Micronaut는 필요 시 |
-| 빌드 | Maven | 기존 실무 연계, 의존성·빌드 생명주기 | Gradle |
+| 빌드 | 학습: JDK CLI → Maven/Gradle/Bazel 비교; 개인 실전: Gradle Kotlin DSL 우선 | 빌드 원리 학습·멀티모듈 자산화 | 회사 실무는 Maven 유지; [ADR-0002](0002-build-system.md)에서 결정 변경 근거 기록 |
 | DB | MySQL 8.4 | SQL, InnoDB 잠금·격리·실행 계획, 실무 연계 | PostgreSQL 후속 비교 |
 | 데이터 접근 | JDBC → JPA/Hibernate | 추상화 전후 비용·동작 비교 | MyBatis/jOOQ |
 | 테스트 | JUnit, Mockito, Testcontainers | 단위 및 실제 인프라 통합 검증 | 인메모리 DB만으로 대체하지 않음 |
