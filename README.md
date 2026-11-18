@@ -11,6 +11,9 @@ Java/Spring 기반 백엔드 엔지니어링 학습 및 재사용 가능한 기�
 
 ## 문서
 - [기술 스택 선정 근거](docs/decisions/0001-tech-stack.md)
+- [빌드 시스템 선택 ADR-0002](docs/decisions/0002-build-system.md)
+- [Module 00 상세 계획](docs/plans/module-00-java-build-fundamentals.md)
+- [대기업 빌드 도구 사례 및 한계](docs/research/enterprise-build-tools.md)
 - [학습 및 모듈 개발 로드맵](docs/plans/roadmap.md)
 
 ## 예정 구조
