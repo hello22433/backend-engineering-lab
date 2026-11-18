@@ -10,6 +10,7 @@ Java/Spring 백엔드의 원리, 설계, 테스트, 운영 역량을 체계적�
 ## 모듈 순서
 | 단계 | 모듈 | 학습 핵심 | 산출물 |
 |---|---|---|---|
+| 00 | Java 실행·빌드 원리 | javac, JVM, classpath, Maven/Gradle/Bazel 비교 | [Module 00 상세 계획](module-00-java-build-fundamentals.md) |
 | 01 | HTTP Server | TCP, HTTP/1.1, 소켓, Servlet | 학습용 HTTP 서버, Spring API 템플릿 |
 | 02 | Authentication | 쿠키, 세션, 암호 저장, CSRF | Spring Security 인증 예제 |
 | 03 | Authorization | RBAC, 최소 권한, 접근 제어 | 권한 정책 예제 |
@@ -20,6 +21,9 @@ Java/Spring 백엔드의 원리, 설계, 테스트, 운영 역량을 체계적�
 | 08 | Messaging | ACK, 재시도, DLQ, 파티션, 오프셋 | RabbitMQ/Kafka 예제 |
 | 09 | Observability | 로그, 메트릭, 트레이스 | 관측성 템플릿 |
 | 10 | Deployment | Linux, Docker, CI/CD | 배포 자동화 예제 |
+
+## 진행 순서 변경
+먼저 [Module 00](module-00-java-build-fundamentals.md)에서 JDK 도구와 빌드 시스템을 학습한 후 HTTP Server로 진행한다. 빌드 도구 결정은 [ADR-0002](../decisions/0002-build-system.md)를 따른다.
 
 ## 모듈별 표준 절차
 1. **PLAN**: 문제, 범위, 성공·실패 조건 정의.
